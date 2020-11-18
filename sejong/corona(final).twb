@@ -1,0 +1,1985 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook original-version='18.1' source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='final' inline='true' name='federated.08i24541vbg2d61dt6cov0el7k0s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final' name='textscan.1em3k3t0f33wyu1e79lfa1lm7to9'>
+            <connection class='textscan' directory='C:/Users/ckdck/Downloads/KT_data_20200717' filename='final.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1em3k3t0f33wyu1e79lfa1lm7to9' name='final.csv' table='[final#csv]' type='table'>
+          <columns character-set='EUC-KR' header='yes' locale='ko_KR' separator=','>
+            <column datatype='date' name='receipt_dttm' ordinal='0' />
+            <column datatype='integer' name='adstrd_code' ordinal='1' />
+            <column datatype='integer' name='adstrd_nm' ordinal='2' />
+            <column datatype='integer' name='mrhst_induty_cl_code' ordinal='3' />
+            <column datatype='string' name='mrhst_induty_cl_nm' ordinal='4' />
+            <column datatype='integer' name='selng_cascnt' ordinal='5' />
+            <column datatype='integer' name='salamt' ordinal='6' />
+            <column datatype='string' name='brtc_nm' ordinal='7' />
+            <column datatype='string' name='signgu_nm' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1em3k3t0f33wyu1e79lfa1lm7to9' name='final.csv' table='[final#csv]' type='table'>
+          <columns character-set='EUC-KR' header='yes' locale='ko_KR' separator=','>
+            <column datatype='date' name='receipt_dttm' ordinal='0' />
+            <column datatype='integer' name='adstrd_code' ordinal='1' />
+            <column datatype='integer' name='adstrd_nm' ordinal='2' />
+            <column datatype='integer' name='mrhst_induty_cl_code' ordinal='3' />
+            <column datatype='string' name='mrhst_induty_cl_nm' ordinal='4' />
+            <column datatype='integer' name='selng_cascnt' ordinal='5' />
+            <column datatype='integer' name='salamt' ordinal='6' />
+            <column datatype='string' name='brtc_nm' ordinal='7' />
+            <column datatype='string' name='signgu_nm' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-970_P110_P110-2006_U2&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>receipt_dttm</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[receipt_dttm]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>receipt_dttm</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adstrd_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adstrd_code]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>adstrd_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adstrd_nm</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adstrd_nm]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>adstrd_nm</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mrhst_induty_cl_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mrhst_induty_cl_code]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>mrhst_induty_cl_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mrhst_induty_cl_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mrhst_induty_cl_nm]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>mrhst_induty_cl_nm</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selng_cascnt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[selng_cascnt]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>selng_cascnt</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>salamt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[salamt]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>salamt</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brtc_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[brtc_nm]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>brtc_nm</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>signgu_nm</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[signgu_nm]</local-name>
+            <parent-name>[final.csv]</parent-name>
+            <remote-alias>signgu_nm</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[final.csv_856C85650D4D4C61A2279086F42448A4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='final.csv' datatype='table' name='[__tableau_internal_object_id__].[final.csv_856C85650D4D4C61A2279086F42448A4]' role='measure' type='quantitative' />
+      <column caption='Adstrd Code' datatype='integer' name='[adstrd_code]' role='dimension' type='ordinal' />
+      <column caption='Adstrd Nm' datatype='integer' name='[adstrd_nm]' role='measure' type='quantitative' />
+      <column caption='Brtc Nm' datatype='string' name='[brtc_nm]' role='dimension' type='nominal' />
+      <column caption='Mrhst Induty Cl Code' datatype='integer' name='[mrhst_induty_cl_code]' role='dimension' type='ordinal' />
+      <column caption='Mrhst Induty Cl Nm' datatype='string' name='[mrhst_induty_cl_nm]' role='dimension' type='nominal' />
+      <column caption='Receipt Dttm' datatype='date' name='[receipt_dttm]' role='dimension' type='ordinal' />
+      <column caption='Salamt' datatype='integer' name='[salamt]' role='measure' type='quantitative' />
+      <column caption='Selng Cascnt' datatype='integer' name='[selng_cascnt]' role='measure' type='quantitative' />
+      <column caption='Signgu Nm' datatype='string' name='[signgu_nm]' role='dimension' type='nominal' />
+      <column-instance column='[mrhst_induty_cl_nm]' derivation='None' name='[none:mrhst_induty_cl_nm:nk]' pivot='key' type='nominal' />
+      <column-instance column='[signgu_nm]' derivation='None' name='[none:signgu_nm:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:signgu_nm:nk]' palette='tableau20_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;강남구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;노원구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;동대문구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;동작구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;마포구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;서대문구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;성동구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;성북구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;양천구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;영등포구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;용산구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;은평구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;종로구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;중구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;강서구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;송파구&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;관악구&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;중랑구&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;구로구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;강북구&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;금천구&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;강동구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;도봉구&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;광진구&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;서초구&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:mrhst_induty_cl_nm:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;건강진단&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;기타 교육&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;기타잡화&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;레져업소(회원제형태)&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;비 영 리&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;수 영 장&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;예체능학원&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;인터넷P/G&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;정 육 점&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;철   도&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;통신판매2&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;화 장 품&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1급 호텔&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;교육테이프&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;기타숙박업&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;농기계&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;법률회계서비스(법인)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;사업자미등록개인&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;생명 보험&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;악 기 점&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;윤활유전문판매&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;자체물품대금&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;주 유 소&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;컴 퓨 터&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;한정식&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;가   방&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;귀 금 속&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;기타음료식품&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;당구장&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;보일러펌프샷시&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;세 차 장&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;애완 동물&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;이동통신요금&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;전자(상우회)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;주방용식기&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;통신 기기&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;통신기기무이자할부&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;혼수전문점&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;택시회사&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;골동품 점&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;기타광학품&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;기타직물&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;면 세 점&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;사무서비스&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;스넥&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;외국어학원&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;일반 서적&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;제 화 점&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;치과병원&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;페 인 트&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;건축요업품&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;기타가구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;기타전기제품&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;레져용품수리&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;비료/농약/사료/종자&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;수 족 관&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;옷감 직물&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;인터넷종합Mall&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;정기간행물&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;철제 가구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;통신판매(일반)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;화물 운송&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;가전 제품&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;기계 공구&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;기타의료기관및기타의료기기&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;대형할인점&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;볼 링 장&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;세탁소&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;약국&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;이륜차판매&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;전자상거래 상품권&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;주점&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;통신서비스&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;홍삼 제품&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;과학기자재&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;기타서적문구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;냉열 기기&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;민예공예품&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;상품권&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;신변잡화수리&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;유학원&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;자동차정비&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;종합병원&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;칵테일바&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;한약방&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2급 호텔&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;구내매점(국가기관등)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;기타연료&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;농축수산품&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;병원&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;서양음식&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;악세 사리&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;의료 용품&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;장례서비스&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;주 차 장&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;컴퓨터학원&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;항 공 사&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;공공 요금&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;기타보험&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;기타회원제형태업소5&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;미곡상&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;사진관&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;시   계&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;유아원&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;자동차서비스(회원제형태)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;조세서비스&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;카인테리어&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;학원(회원제형태)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;가정용품수리&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;기념품 점&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;기타의류&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;독서실&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;부동산분양&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;소프트웨어&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;연 쇄 점&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;인삼 제품&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;전자상거래 상품권 전문판매&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;중고자동차&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;통신서비스/비대상&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;화   랑&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;골프 용품&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;기타교통수단&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;기타회원제형태업소1&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;문구용 품&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;사무서비스(회원제형태)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;스크린골프&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;위탁급식업&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;일반한식&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;제과점&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;치과의원&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;편 의 점&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;골프경기장&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;기타대인서비스&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;기타회원제형태업소3&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;문화취미기타&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;사무통신기기수리&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;스포츠레져용품&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;유   리&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;일식회집&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;제약회사&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;침구수예점&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;피부미용실&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;공공요금/대상&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;기타사무용품&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;내의판매점&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;미용 재료&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;산후조리원&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;신   발&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;유치원&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;자동차시트/타이어&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;조세서비스(특약)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;카지노&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;한방병원&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;관광여행&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;기타수리서비스&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;노래방&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;법률회계서비스(개인)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;상품권 전문판매&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;아동의류&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;유흥주점&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;자사카드발행백화점&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;종합용역&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;캐쥬얼의류&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;한의원&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;견인서비스&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;기타건강식&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;기타전문점&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;렌 트 카&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;비영리/비대상&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;수입자동차&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;와이셔츠/타이&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;인테 리어&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;정보서비스&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;초중고교육기관&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;총포류판매&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;특급 호텔&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;화방표구점&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;통신판매(생활서비스)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;건강식품(회원제형태)&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;기능학원&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;기타자동차서비스&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;동물병원&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;부동산중개/임대&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;손해 보험&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;영화관&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;인터넷Mall&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;정 수 기&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;중국음식&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;통신판매1&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;화   원&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;L P G&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;국산 신차&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;기타용역서비스&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;단란주점&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;보관창고업&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;서적출판(회원제형태)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;안경&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;의원&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;전기차충전소&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;주류판매점&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;중고자동차위탁판매&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;택   시&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;헬스 크럽&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;골프연습장&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;기타레져업&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;기타회원제형태업소4&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;미 용 원&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;사우나&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;스포츠의류&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;유류 판매&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;자동차부품&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;조명 기구&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;카 메 라&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;학습지교육&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;고속 버스&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;기타건축자재&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;기타주방용구&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;맞춤복 점&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;사무 기기&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;슈퍼 마켓&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;완 구 점&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;일반 가구&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;정장&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;출판인쇄물&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;티켓&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;PG 상품권&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;국산신차직영부품/정비업소&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;기타유통업&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;단체복&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;보습학원&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;성인용품점&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;안마/스포츠마사지&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;이 용 원&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;전문 서적&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;주방 용구&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;테니스 장&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;혼례서비스&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='final.csv' id='final.csv_856C85650D4D4C61A2279086F42448A4'>
+            <properties context=''>
+              <relation connection='textscan.1em3k3t0f33wyu1e79lfa1lm7to9' name='final.csv' table='[final#csv]' type='table'>
+                <columns character-set='EUC-KR' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='date' name='receipt_dttm' ordinal='0' />
+                  <column datatype='integer' name='adstrd_code' ordinal='1' />
+                  <column datatype='integer' name='adstrd_nm' ordinal='2' />
+                  <column datatype='integer' name='mrhst_induty_cl_code' ordinal='3' />
+                  <column datatype='string' name='mrhst_induty_cl_nm' ordinal='4' />
+                  <column datatype='integer' name='selng_cascnt' ordinal='5' />
+                  <column datatype='integer' name='salamt' ordinal='6' />
+                  <column datatype='string' name='brtc_nm' ordinal='7' />
+                  <column datatype='string' name='signgu_nm' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='매출'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final' name='federated.08i24541vbg2d61dt6cov0el7k0s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08i24541vbg2d61dt6cov0el7k0s'>
+            <column-instance column='[salamt]' derivation='Avg' name='[avg:salamt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[receipt_dttm]' derivation='Month' name='[mn:receipt_dttm:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[signgu_nm]' derivation='None' name='[none:signgu_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Receipt Dttm' datatype='date' name='[receipt_dttm]' role='dimension' type='ordinal' />
+            <column caption='Salamt' datatype='integer' name='[salamt]' role='measure' type='quantitative' />
+            <column caption='Signgu Nm' datatype='string' name='[signgu_nm]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]'>
+            <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;강북구&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.0104972124099731' />
+                <format attr='mark-transparency' value='180' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08i24541vbg2d61dt6cov0el7k0s].[avg:salamt:qk]</rows>
+        <cols>[federated.08i24541vbg2d61dt6cov0el7k0s].[mn:receipt_dttm:ok]</cols>
+      </table>
+      <simple-id uuid='{0F498139-BB98-45CC-AEC4-463F6BB890DA}' />
+    </worksheet>
+    <worksheet name='매출발생건수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final' name='federated.08i24541vbg2d61dt6cov0el7k0s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08i24541vbg2d61dt6cov0el7k0s'>
+            <column-instance column='[selng_cascnt]' derivation='Avg' name='[avg:selng_cascnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[receipt_dttm]' derivation='Month' name='[mn:receipt_dttm:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[signgu_nm]' derivation='None' name='[none:signgu_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Receipt Dttm' datatype='date' name='[receipt_dttm]' role='dimension' type='ordinal' />
+            <column caption='Selng Cascnt' datatype='integer' name='[selng_cascnt]' role='measure' type='quantitative' />
+            <column caption='Signgu Nm' datatype='string' name='[signgu_nm]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]'>
+            <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;강북구&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.0654696226119995' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='183' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08i24541vbg2d61dt6cov0el7k0s].[avg:selng_cascnt:qk]</rows>
+        <cols>[federated.08i24541vbg2d61dt6cov0el7k0s].[mn:receipt_dttm:ok]</cols>
+      </table>
+      <simple-id uuid='{3E365038-A610-4D24-BEF4-55E141148A3A}' />
+    </worksheet>
+    <worksheet name='매출업종-매출'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final' name='federated.08i24541vbg2d61dt6cov0el7k0s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08i24541vbg2d61dt6cov0el7k0s'>
+            <column-instance column='[receipt_dttm]' derivation='Month' name='[mn:receipt_dttm:ok]' pivot='key' type='ordinal' />
+            <column caption='Mrhst Induty Cl Nm' datatype='string' name='[mrhst_induty_cl_nm]' role='dimension' type='nominal' />
+            <column-instance column='[mrhst_induty_cl_nm]' derivation='None' name='[none:mrhst_induty_cl_nm:nk]' pivot='key' type='nominal' />
+            <column-instance column='[signgu_nm]' derivation='None' name='[none:signgu_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Receipt Dttm' datatype='date' name='[receipt_dttm]' role='dimension' type='ordinal' />
+            <column caption='Salamt' datatype='integer' name='[salamt]' role='measure' type='quantitative' />
+            <column caption='Signgu Nm' datatype='string' name='[signgu_nm]' role='dimension' type='nominal' />
+            <column-instance column='[salamt]' derivation='Sum' name='[sum:salamt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([salamt])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:mrhst_induty_cl_nm:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]'>
+            <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;강북구&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</column>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Receipt Dttm의 월:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.08i24541vbg2d61dt6cov0el7k0s].[mn:receipt_dttm:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Signgu Nm:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Salamt:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.08i24541vbg2d61dt6cov0el7k0s].[sum:salamt:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>1급 호텔 : 많이내는 동네 점유</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>2급 호텔 : &apos;&apos;  여기는 송파구가 더 매출이 많다. 아마 1급은 강남, 2급은 송파 이렇게도</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>나뉘어 지는것 같다. </run>
+                <run>Æ&#10;</run>
+                <run bold='true'>LPG : </run>
+                <run>Æ&#10;</run>
+                <run bold='true'>PG 상품권 : 강남과 송파밖에 없지만, 알수 있는 사실로는 보통 인구수가 1.264배 차이나는데 마지막 6월 되서야 1.294로 비슷해졌다. 이말은 즉, 강남에 옛날에는 외부에서도 사람들이 많이 매출을 만들었지만, 타격을 심하게 받은 것도 강남이다. </run>
+                <run>Æ&#10;</run>
+                <run bold='true'>역설적으로 송파구는 거의 차이가 없는걸로보아서 강남보다 더 세금많이내는동네가 아니다. 즉, 강남이 더 부자동네다.</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>가 방 : 강남의 매출이 6월되자 급감했다.</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>가정용품수리 : 2~5까지 계속 증가했다. 이말은 집에 필요한 것에 더 투자했다는 뜻. 모든 구가 그렇다. 그리고 6월에 감소했다. 이말은 6월부터 회복기라는 뜻을 가진다.</run>
+                <run>
+
+갈비전문점 : 세금덜내는 동네는 맛집이라는 뜻을 가진다. 혹은 음식 이런데 더 투자하는 것을 알 수 있다. 
+건강식품 : 근데 잘사는 동네는 건강식품을 많이 챙겨먹는다. 또, 알 수 있는건 그 와중에 중랑구가 있다. 즉, 못사는 동네에서도 더 못사는 동네가 있다.
+건축요업 : 뜻을 찾아보니 </run>
+                <run fontcolor='#000000' fontname='Malgun Gothic'>점토나 비금속 무기재료를 원료로 열처리공정을 거쳐 도자기·벽돌·기와 등 생활에 필요한 물품을 만드는 제조업.   </run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Malgun Gothic'>[출처: 한국민족문화대백과사전(요업(窯業))] 라고 하는데 도봉구가 매출이 많다. </run>
+                <run>
+견인서비스 : 중랑구가 큰 비중을 차지한다. 이유를 찾아봐야한다. 
+골프, 관광여행, 과학기자재 등 인프라가 잘 되어있는 곳은 강남 서초 송파이다.
+신차는 서초구인데, 신차부품 같은건 도봉구에서 오는것 같다. 
+귀금속은 강남, 자동차는 서초구인것 같다. 
+
+대부분의 분포에서 강남 &gt; 서초 &gt; 송파 &gt; 중랑 &gt; 도봉 &gt; 강북 순으로 매출이 많았다. 
+
+2020년 5월말을 기준으로 그 전이 코로나</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.08i24541vbg2d61dt6cov0el7k0s].[sum:salamt:qk]</rows>
+        <cols>[federated.08i24541vbg2d61dt6cov0el7k0s].[mn:receipt_dttm:ok]</cols>
+      </table>
+      <simple-id uuid='{0FE7410F-17B2-4D6C-8C6F-09C64F58F813}' />
+    </worksheet>
+    <worksheet name='매출업종-발생'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final' name='federated.08i24541vbg2d61dt6cov0el7k0s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08i24541vbg2d61dt6cov0el7k0s'>
+            <column-instance column='[receipt_dttm]' derivation='Month' name='[mn:receipt_dttm:ok]' pivot='key' type='ordinal' />
+            <column caption='Mrhst Induty Cl Nm' datatype='string' name='[mrhst_induty_cl_nm]' role='dimension' type='nominal' />
+            <column-instance column='[mrhst_induty_cl_nm]' derivation='None' name='[none:mrhst_induty_cl_nm:nk]' pivot='key' type='nominal' />
+            <column-instance column='[signgu_nm]' derivation='None' name='[none:signgu_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Receipt Dttm' datatype='date' name='[receipt_dttm]' role='dimension' type='ordinal' />
+            <column caption='Selng Cascnt' datatype='integer' name='[selng_cascnt]' role='measure' type='quantitative' />
+            <column caption='Signgu Nm' datatype='string' name='[signgu_nm]' role='dimension' type='nominal' />
+            <column-instance column='[selng_cascnt]' derivation='Sum' name='[sum:selng_cascnt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]'>
+            <groupfilter function='member' level='[none:mrhst_induty_cl_nm:nk]' member='&quot;1급 호텔&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;강남구&quot;' />
+              <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;강북구&quot;' />
+              <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;도봉구&quot;' />
+              <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;서초구&quot;' />
+              <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;송파구&quot;' />
+              <groupfilter function='member' level='[none:signgu_nm:nk]' member='&quot;중랑구&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</column>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='208' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08i24541vbg2d61dt6cov0el7k0s].[sum:selng_cascnt:qk]</rows>
+        <cols>[federated.08i24541vbg2d61dt6cov0el7k0s].[mn:receipt_dttm:ok]</cols>
+      </table>
+      <simple-id uuid='{518C753A-207B-4C5C-B24F-0EC39427F0FD}' />
+    </worksheet>
+    <worksheet name='분석'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='final' name='federated.08i24541vbg2d61dt6cov0el7k0s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08i24541vbg2d61dt6cov0el7k0s'>
+            <column-instance column='[receipt_dttm]' derivation='Month' name='[mn:receipt_dttm:ok]' pivot='key' type='ordinal' />
+            <column caption='Mrhst Induty Cl Nm' datatype='string' name='[mrhst_induty_cl_nm]' role='dimension' type='nominal' />
+            <column-instance column='[receipt_dttm]' derivation='MY' name='[my:receipt_dttm:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[mrhst_induty_cl_nm]' derivation='None' name='[none:mrhst_induty_cl_nm:nk]' pivot='key' type='nominal' />
+            <column-instance column='[signgu_nm]' derivation='None' name='[none:signgu_nm:nk]' pivot='key' type='nominal' />
+            <column caption='Receipt Dttm' datatype='date' name='[receipt_dttm]' role='dimension' type='ordinal' />
+            <column caption='Salamt' datatype='integer' name='[salamt]' role='measure' type='quantitative' />
+            <column caption='Signgu Nm' datatype='string' name='[signgu_nm]' role='dimension' type='nominal' />
+            <column-instance column='[salamt]' derivation='Sum' name='[sum:salamt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[my:receipt_dttm:ok]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[my:receipt_dttm:ok]' member='202005' />
+              <groupfilter function='member' level='[my:receipt_dttm:ok]' member='202006' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([salamt])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:mrhst_induty_cl_nm:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]'>
+            <groupfilter function='empty-level' member='[none:signgu_nm:nk]' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</column>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]</column>
+            <column>[federated.08i24541vbg2d61dt6cov0el7k0s].[my:receipt_dttm:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Receipt Dttm의 월:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.08i24541vbg2d61dt6cov0el7k0s].[mn:receipt_dttm:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Signgu Nm:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Salamt:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.08i24541vbg2d61dt6cov0el7k0s].[sum:salamt:qk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>1급 호텔 : 많이내는 동네 점유</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>2급 호텔 : &apos;&apos;  여기는 송파구가 더 매출이 많다. 아마 1급은 강남, 2급은 송파 이렇게도</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>나뉘어 지는것 같다. </run>
+                <run>Æ&#10;</run>
+                <run bold='true'>LPG : </run>
+                <run>Æ&#10;</run>
+                <run bold='true'>PG 상품권 : 강남과 송파밖에 없지만, 알수 있는 사실로는 보통 인구수가 1.264배 차이나는데 마지막 6월 되서야 1.294로 비슷해졌다. 이말은 즉, 강남에 옛날에는 외부에서도 사람들이 많이 매출을 만들었지만, 타격을 심하게 받은 것도 강남이다. </run>
+                <run>Æ&#10;</run>
+                <run bold='true'>역설적으로 송파구는 거의 차이가 없는걸로보아서 강남보다 더 세금많이내는동네가 아니다. 즉, 강남이 더 부자동네다.</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>가 방 : 강남의 매출이 6월되자 급감했다.</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>가정용품수리 : 2~5까지 계속 증가했다. 이말은 집에 필요한 것에 더 투자했다는 뜻. 모든 구가 그렇다. 그리고 6월에 감소했다. 이말은 6월부터 회복기라는 뜻을 가진다.</run>
+                <run>
+
+갈비전문점 : 세금덜내는 동네는 맛집이라는 뜻을 가진다. 혹은 음식 이런데 더 투자하는 것을 알 수 있다. 
+건강식품 : 근데 잘사는 동네는 건강식품을 많이 챙겨먹는다. 또, 알 수 있는건 그 와중에 중랑구가 있다. 즉, 못사는 동네에서도 더 못사는 동네가 있다.
+건축요업 : 뜻을 찾아보니 </run>
+                <run fontcolor='#000000' fontname='Malgun Gothic'>점토나 비금속 무기재료를 원료로 열처리공정을 거쳐 도자기·벽돌·기와 등 생활에 필요한 물품을 만드는 제조업.   </run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Malgun Gothic'>[출처: 한국민족문화대백과사전(요업(窯業))] 라고 하는데 도봉구가 매출이 많다. </run>
+                <run>
+견인서비스 : 중랑구가 큰 비중을 차지한다. 이유를 찾아봐야한다. 
+골프, 관광여행, 과학기자재 등 인프라가 잘 되어있는 곳은 강남 서초 송파이다.
+신차는 서초구인데, 신차부품 같은건 도봉구에서 오는것 같다. 
+귀금속은 강남, 자동차는 서초구인것 같다. 
+
+대부분의 분포에서 강남 &gt; 서초 &gt; 송파 &gt; 중랑 &gt; 도봉 &gt; 강북 순으로 매출이 많았다. 
+
+2020년 5월말을 기준으로 그 후를 포스트 코로나 시대로 정의한다. 
+
+모두 큰 변화 없이 주요 물품에 소비할 것이다. 
+
+강남, 서초를 제외 한 4개의 구는 한식, 양식, 인터넷 을 많이 이용할 것이고 
+강남, 서초는 국산차, 인터넷등을 이용할 것이다. 
+
+도봉구는 택시를 잘 안타며.서초구에서 굳이 통신관련해서 돈을 안쓸 것이다. 
+송파구는 총포류판매에서 돈을 안쓸것이다.</run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.08i24541vbg2d61dt6cov0el7k0s].[sum:salamt:qk]</rows>
+        <cols>[federated.08i24541vbg2d61dt6cov0el7k0s].[mn:receipt_dttm:ok]</cols>
+      </table>
+      <simple-id uuid='{610FCBA2-4F55-4D35-B3F3-533D55435477}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='매출발생건수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='1' param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[yr:receipt_dttm:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6C2D9762-0062-41E9-BC77-C1138B7FCA08}' />
+    </window>
+    <window class='worksheet' name='매출'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[yr:receipt_dttm:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{203EF721-1902-42F8-9C25-785EC9F9165B}' />
+    </window>
+    <window class='worksheet' name='매출업종-발생'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='color' />
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[yr:receipt_dttm:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{29B8C37B-BB1C-42D2-A424-178A8D49C248}' />
+    </window>
+    <window class='worksheet' name='매출업종-매출'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='156'>
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[my:receipt_dttm:ok]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[yr:receipt_dttm:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{511E3CBF-0E08-4B00-A5D2-E166F29330F8}' />
+    </window>
+    <window class='worksheet' maximized='true' name='분석'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:signgu_nm:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='156'>
+            <card param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[my:receipt_dttm:ok]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[none:mrhst_induty_cl_nm:nk]</field>
+            <field>[federated.08i24541vbg2d61dt6cov0el7k0s].[yr:receipt_dttm:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B1F00A40-ABE9-4B1B-A231-CF57853282F6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='매출' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='매출발생건수' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='매출업종-매출' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='매출업종-발생' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
