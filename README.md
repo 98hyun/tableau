@@ -1,8 +1,4 @@
-### Sejong 
-
-* 시험
-
-### [Tableau Public](https://public.tableau.com/profile/.42697504#!/)
+## [Tableau Public](https://public.tableau.com/profile/.42697504#!/)
 
 #### 궁금한점.
 
